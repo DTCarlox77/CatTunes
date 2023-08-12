@@ -1,0 +1,674 @@
+@charset "UTF-8";
+@import url("https://fonts.cdnfonts.com/css/wc-mano-negra?styles=906");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amiko:wght@400;600&display=swap");
+@font-face {
+  font-family: "Monument";
+  src: url("./fonts/MonumentExtended-Regular.otf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  background-color: black !important;
+  color: white !important;
+}
+
+@media (min-width: 1051px) {
+  header {
+    height: 50vh;
+    width: 100%;
+    background: url("./images/otrofondo.jpg");
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(5px);
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding-top: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  header a {
+    text-decoration: none;
+    color: white;
+    padding-left: 40px;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.5), 0 0 40px rgba(0, 0, 0, 0.3), 0 0 60px rgba(0, 0, 0, 0.2);
+  }
+  header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 102%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), transparent 5%, transparent 20%, transparent 50%, rgb(0, 0, 0)), linear-gradient(to top, rgba(0, 0, 0, 0), transparent 5%, transparent 20%, transparent 50%, rgb(0, 0, 0)), url("./images/otrofondo.jpg");;
+    background-size: cover;
+    background-position: center;
+    z-index: -20;
+  }
+  .Fondo_Perfect {
+    width: 100%;
+    height: 100%;
+    position: static;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .Principal, .footer .logo .logo-text {
+    font-size: 310%;
+    font-weight: 200;
+    font-family: "WC Mano Negra Bta", sans-serif;
+  }
+  .Objetos, .footer {
+    position: relative;
+    margin-left: auto;
+    font-size: 170%;
+    font-family: "Monument", "Helvetica", Arial, sans-serif;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.5), 0 0 40px rgba(0, 0, 0, 0.3), 0 0 60px rgba(0, 0, 0, 0.2);
+  }
+  .Contenido {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+  }
+  .Contenido h1 {
+    font-family: "Monument", "Helvetica", Arial, sans-serif;
+    font-weight: 100;
+    font-size: 350%;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.5), 0 0 40px rgba(0, 0, 0, 0.3), 0 0 60px rgba(0, 0, 0, 0.2);
+  }
+  .Contenido h2 {
+    font-family: "Amiko", sans-serif;
+    font-size: 160%;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.5), 0 0 40px rgba(0, 0, 0, 0.3), 0 0 60px rgba(0, 0, 0, 0.2);
+  }
+  .Link_Carátula {
+    display: block;
+    padding-top: 5%;
+    padding-left: auto;
+    width: 38%;
+    height: 38%;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease;
+  }
+  .Link_Carátula a {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  .Link_Carátula img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .Link_Carátula:hover {
+    transform: scale(1.1);
+  }
+  .Información_Canción {
+    display: block;
+    position: static;
+    margin-top: 17%;
+    margin-right: 10%;
+    line-height: 0;
+  }
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 10vh;
+    flex-wrap: wrap;
+  }
+  .Contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-bottom: 5%;
+    margin: auto;
+  }
+  .Contenedor2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4%;
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-bottom: 4%;
+    margin: auto;
+    font-family: "Monument", "Helvetica", Arial, sans-serif;
+    font-weight: 100;
+  }
+  .Contenedor .Título_contenedor {
+    max-width: 70%;
+    text-align: center;
+  }
+
+  .Contenedor h1 {
+    font-family: "Monument", "Helvetica", Arial, sans-serif;
+    font-weight: 100;
+  }
+  .Contenedor p {
+    text-align: justify;
+    padding-top: 5%;
+    font-family: "Amiko", sans-serif;
+    font-size: 150%;
+  }
+  .Contenedor .Información_adicional_bienvenida {
+    margin-top: 2%;
+    background-color: none;
+    color: white;
+    border: white solid 3px;
+    padding: 20px 55px;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Monument", "Helvetica", Arial, sans-serif;
+  }
+  .galeria {
+    padding-top: 2%;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: flex;
+    align-items: center;
+  }
+  .imagengaleria {
+    position: relative;
+    width: 350px;
+    height: 450px;
+    object-fit: cover;
+    margin-right: 22px;
+    cursor: pointer;
+    perspective: 1000px;
+    transition: transform 0.5s;
+  }
+  .imagengaleria img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .imagengaleria:hover {
+    transform: rotateY(180deg);
+  }
+  .contenedor-trasero {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: "Monument", "Helvetica", Arial, sans-serif;
+    font-size: 25px;
+    padding: 20px;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transition: opacity 0.3s, transform 0.3s;
+    pointer-events: none;
+    opacity: 0;
+    transform: scaleX(-1);
+  }
+  .imagengaleria:hover .contenedor-trasero {
+    opacity: 1;
+    transform: rotateY(0) scaleX(-1);
+  }
+  .fondojapones {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    padding-top: 15%;
+  }
+  .fondojapones img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: black;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(95, 95, 95);
+    border-radius: 5px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: gray;
+  }
+}
+.footer {
+  background-color: #000;
+  color: white;
+  text-align: center;
+  padding-bottom: 5%;
+}
+.footer .social-links {
+  margin-top: 15px;
+  list-style: none;
+  display: flex;
+}
+.footer .social-links .nav-item {
+  padding-top: 9%;
+}
+.footer .social-links .nav-link {
+  color: white;
+  font-size: 22px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.footer .social-links .nav-link:hover {
+  color: #7E54F6;
+}
+.footer .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer .logo .logo-text {
+  font-size: 70px;
+}
+.footer .logo svg {
+  width: 30%;
+  height: auto;
+  fill: white;
+  margin-right: 10px;
+}
+.footer .logo h2 {
+  font-size: 24px;
+  margin: 0;
+}
+.footer .rights-text {
+  margin-top: 20px;
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+@media (max-width: 1050px) {
+  header {
+    background-color: black;
+    position: relative;
+    background: url("./images/otrofondo.jpg");
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(5px);
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding-top: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 101%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), transparent 5%, transparent 20%, transparent 50%, rgb(0, 0, 0)), linear-gradient(to top, rgba(0, 0, 0, 0), transparent 5%, transparent 20%, transparent 50%, rgb(0, 0, 0)), url("./images/otrofondo.jpg");;
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px) brightness(1.1);
+    z-index: -20;
+  }
+  header a {
+    text-decoration: none;
+    color: white;
+    padding-left: 20px;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Objetos, .footer {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Objetos .Principal, .footer .Principal, .footer .logo .logo-text {
+    position: inherit;
+    font-size: 70px;
+    font-weight: 200;
+    font-family: "WC Mano Negra Bta", sans-serif;
+  }
+  .Objetos .Miniobjeto, .footer .Miniobjeto {
+    padding: auto;
+    align-items: flex-end;
+    flex-direction: column;
+    position: relative;
+    font-size: 20px;
+    font-family: "Monument", sans-serif;
+    margin-top: 10px;
+  }
+  .Contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+  }
+  .Contenido h1 {
+    font-family: "Monument", "Helvetica", Arial, sans-serif;
+    font-size: 32px;
+  }
+  .Contenido h2 {
+    font-family: "Amiko", sans-serif;
+    font-size: 18px;
+  }
+  .Link_Carátula {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  .Link_Carátula a {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+  .Link_Carátula img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .Información_Canción {
+    margin-top: 15%;
+    text-align: center;
+  }
+  main {
+    text-align: center;
+    padding: 20px;
+  }
+  .Info {
+    margin-top: 15px;
+  }
+  .Información {
+    padding: 20px;
+    text-align: center;
+  }
+  .Información h1 {
+    font-size: 24px;
+    font-weight: 100;
+  }
+  .Información p {
+    font-size: 18px;
+  }
+  .Título_bienvenida {
+    max-width: 100%;
+    text-align: center;
+    padding-top: 15%;
+    font-family: "Monument", "Helvetica", Arial, sans-serif;
+  }
+  .Información_adicional_escuchar {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: #7E54F6;
+    color: white;
+    padding: 10px 100px;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Monument", "Helvetica", Arial, sans-serif;
+  }
+  .Información_adicional_información {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: none;
+    color: white;
+    border: white solid 3px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Monument", "Helvetica", Arial, sans-serif;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+  }
+  .Contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 8%;
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-bottom: 10%;
+    margin: auto;
+  }
+  .Contenedor .Título_contenedor {
+    max-width: 70%;
+    text-align: center;
+  }
+  .Contenedor h1 {
+    font-family: "Monument", "Helvetica", Arial, sans-serif;
+    font-weight: 100;
+    font-size: 150%;
+  }
+  .Contenedor p {
+    text-align: justify;
+    padding-top: 5%;
+    font-family: "Amiko", sans-serif;
+    font-size: 100%;
+  }
+  .Contenedor .Información_adicional_bienvenida {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: none;
+    color: white;
+    border: white solid 3px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Monument", "Helvetica", Arial, sans-serif;
+  }
+  .galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  .imagengaleria {
+    position: relative;
+    width: 315px;
+    height: 410px;
+    margin-right: 22px;
+    margin-bottom: 22px;
+    cursor: pointer;
+    perspective: 1000px;
+  }
+  .imagengaleria img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .contenedor-trasero {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    color: white;
+    font-family: "Monument", "Helvetica", Arial, sans-serif;
+    font-size: 18px;
+    padding: 10px;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transition: opacity 0.3s, transform 0.3s;
+    pointer-events: none;
+    opacity: 1;
+  }
+  .galeria_canciones {
+    max-width: min-content;
+    padding-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  .imagen_galeria_canciones {
+    margin-top: 2%;
+    position: relative;
+    width: 800px;
+    height: 50%;
+    object-fit: cover;
+    object-position: top;
+    cursor: pointer;
+    perspective: 1000px;
+  }
+  .imagen_galeria_canciones img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .contenedor-trasero-canciones {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: white;
+    font-family: "Monument", "Helvetica", Arial, sans-serif;
+    font-size: 25px;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transition: opacity 0.3s, transform 0.3s;
+    pointer-events: none;
+    opacity: 1;
+  }
+  .fondojapones {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    padding-top: 15%;
+  }
+  .fondojapones img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: black;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(95, 95, 95);
+    border-radius: 5px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: gray;
+  }
+  .footer {
+    font-family: "Monument", "Helvetica", Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #000;
+    color: white;
+  }
+  .footer .social-links {
+    margin-top: auto;
+    justify-content: center;
+    list-style: none;
+  }
+  .footer .social-links .nav-item {
+    padding-top: 2%;
+  }
+  .footer .social-links .nav-link {
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  .footer .social-links .nav-link:hover {
+    color: #7E54F6;
+  }
+  .footer .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer .logo .logo-text {
+    font-size: 60px;
+  }
+  .footer .rights-text {
+    margin-top: 20px;
+    font-size: 12px;
+    opacity: 0.7;
+    padding-bottom: 5%;
+  }
+}
+#Artistas:hover {
+  color: lightcyan;
+}
+
+#Musica:hover {
+  color: rgb(201, 255, 255);
+}
+
+#Contacto:hover {
+  color: rgb(176, 255, 255);
+}
+
+/*Referencias: https://monstercat.fandom.com */
+
+/*# sourceMappingURL=style.css.map */
