@@ -11,7 +11,7 @@ $footer-text-color: white;
 
 @font-face {
     font-family: "Monument";
-    src: url('/fonts/MonumentExtended-Regular.otf') format('woff');
+    src: url('./fonts/MonumentExtended-Regular.otf') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -26,7 +26,7 @@ body {
     header {
         height: 100vh;
         width: 100%;
-        background: url('/images/bgperfect.jpg');
+        background: url('./images/bgperfect.jpg');
         background-size: cover;
         background-position: center;
         backdrop-filter: blur(5px); 
@@ -57,7 +57,7 @@ body {
         height: 101%;
         background: linear-gradient(to bottom, rgba(0, 0, 0, 0), transparent 5%, transparent 20%, transparent 50%, rgba(0, 0, 0, 1)), 
         linear-gradient(to top, rgba(0, 0, 0, 0), transparent 5%, transparent 20%, transparent 50%, rgba(0, 0, 0, 1)), 
-        url('/images/bgperfect.jpg');
+        url('./images/bgperfect.jpg');
         background-size: cover;
         background-position: center;
         filter: blur(5px) brightness(1.1);
@@ -469,7 +469,7 @@ body {
     header {
         background-color: black;
         position: relative;
-        background: url('/images/bgperfect.jpg');
+        background: url('./images/bgperfect.jpg');
         background-size: cover;
         background-position: center;
         backdrop-filter: blur(5px); 
@@ -493,7 +493,7 @@ body {
         height: 101%;
         background: linear-gradient(to bottom, rgba(0, 0, 0, 0), transparent 5%, transparent 20%, transparent 50%, rgba(0, 0, 0, 1)), 
         linear-gradient(to top, rgba(0, 0, 0, 0), transparent 5%, transparent 20%, transparent 50%, rgba(0, 0, 0, 1)), 
-        url('/images/bgperfect.jpg');
+        url('./images/bgperfect.jpg');
         background-size: cover;
         background-position: center;
         filter: blur(5px) brightness(1.1);
