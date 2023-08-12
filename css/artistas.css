@@ -4,7 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Amiko:wght@400;600&display=swap");
 @font-face {
   font-family: "Monument";
-  src: url("./fonts/MonumentExtended-Regular.otf") format("woff");
+  src: url("/fonts/MonumentExtended-Regular.otf") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -19,7 +19,7 @@ body {
   header {
     height: 50vh;
     width: 100%;
-    background: url("./images/otrofondo.jpg");
+    background: url("/images/otrofondo.jpg");
     background-size: cover;
     background-position: center;
     backdrop-filter: blur(5px);
@@ -46,7 +46,7 @@ body {
     left: 0;
     width: 100%;
     height: 102%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), transparent 5%, transparent 20%, transparent 50%, rgb(0, 0, 0)), linear-gradient(to top, rgba(0, 0, 0, 0), transparent 5%, transparent 20%, transparent 50%, rgb(0, 0, 0)), url("./images/otrofondo.jpg");;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), transparent 5%, transparent 20%, transparent 50%, rgb(0, 0, 0)), linear-gradient(to top, rgba(0, 0, 0, 0), transparent 5%, transparent 20%, transparent 50%, rgb(0, 0, 0)), url("/images/otrofondo.jpg");;
     background-size: cover;
     background-position: center;
     z-index: -20;
@@ -230,6 +230,58 @@ body {
     opacity: 1;
     transform: rotateY(0) scaleX(-1);
   }
+  .galeria2 {
+    padding-top: 2%;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .imagengaleria2 {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin-right: 22px;
+    cursor: pointer;
+    transition: transform 0.5s;
+  }
+  .imagengaleria2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .imagengaleria2:hover {
+    transform: rotateY(180deg);
+  }
+  .contenedor-trasero2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: "Monument", "Helvetica", Arial, sans-serif;
+    font-size: 25px;
+    padding: 20px;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transition: opacity 0.3s, transform 0.3s;
+    pointer-events: none;
+    opacity: 0;
+    transform: scaleX(-1);
+  }
+  .imagengaleria2:hover .contenedor-trasero2 {
+    opacity: 1;
+    transform: rotateY(0) scaleX(-1);
+  }
   .fondojapones {
     display: inline-block;
     position: relative;
@@ -308,7 +360,7 @@ body {
   header {
     background-color: black;
     position: relative;
-    background: url("./images/otrofondo.jpg");
+    background: url("/images/otrofondo.jpg");
     background-size: cover;
     background-position: center;
     backdrop-filter: blur(5px);
@@ -329,7 +381,7 @@ body {
     left: 0;
     width: 100%;
     height: 101%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), transparent 5%, transparent 20%, transparent 50%, rgb(0, 0, 0)), linear-gradient(to top, rgba(0, 0, 0, 0), transparent 5%, transparent 20%, transparent 50%, rgb(0, 0, 0)), url("./images/otrofondo.jpg");;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), transparent 5%, transparent 20%, transparent 50%, rgb(0, 0, 0)), linear-gradient(to top, rgba(0, 0, 0, 0), transparent 5%, transparent 20%, transparent 50%, rgb(0, 0, 0)), url("/images/otrofondo.jpg");;
     background-size: cover;
     background-position: center;
     filter: blur(5px) brightness(1.1);
@@ -503,6 +555,7 @@ body {
     font-family: "Monument", "Helvetica", Arial, sans-serif;
   }
   .galeria {
+    padding-bottom: 10%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -524,6 +577,50 @@ body {
     object-fit: cover;
   }
   .contenedor-trasero {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    color: white;
+    font-family: "Monument", "Helvetica", Arial, sans-serif;
+    font-size: 18px;
+    padding: 10px;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transition: opacity 0.3s, transform 0.3s;
+    pointer-events: none;
+    opacity: 1;
+  }
+  .galeria2 {
+    padding-top: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  .imagengaleria2 {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin-right: 22px;
+    margin-bottom: 22px;
+    cursor: pointer;
+    perspective: 1000px;
+  }
+  .imagengaleria2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .contenedor-trasero2 {
     position: absolute;
     top: 0;
     left: 0;
