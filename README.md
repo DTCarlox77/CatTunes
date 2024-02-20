@@ -41,4 +41,4 @@ Nuestra plataforma cuenta con una presentación visual atractiva. Desde carátul
 
 ¡Bienvenido a CatTunes, donde los ritmos y melodías electrónicas cobran vida!
 
-# Hecho por: Carlos Adrián Espinosa Luna.
+## Hecho por: Carlos Adrián Espinosa Luna.
