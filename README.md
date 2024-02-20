@@ -41,5 +41,4 @@ Nuestra plataforma cuenta con una presentación visual atractiva. Desde carátul
 
 ¡Bienvenido a CatTunes, donde los ritmos y melodías electrónicas cobran vida!
 
-# Creado por: Carlos Adrián Espinosa Luna.
-## Project 0: Homepage (Curso Web50x)
+# Hecho por: Carlos Adrián Espinosa Luna.
